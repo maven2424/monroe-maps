@@ -280,3 +280,4 @@ This project is licensed under the MIT License.
 
 **Note**: This application automatically processes form submissions and displays them on a map. Ensure you have proper consent and privacy policies in place for collecting and displaying user data.
 
+# Test automatic deployment
