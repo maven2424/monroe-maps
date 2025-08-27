@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Monroe Maps - Form Data Visualization',
+  title: 'Monroe Camera App - Form Data Visualization',
   description: 'Real-time form data visualization with Google Maps integration',
 }
 
