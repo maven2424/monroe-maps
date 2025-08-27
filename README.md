@@ -1,4 +1,4 @@
-# Monroe Camera App - Form Data Visualization Dashboard
+# Monroe Camera App - Form Data Visualization Dashboard (Fixed Environment Variables)
 
 A real-time web application that automatically receives form submissions from WordPress and displays them on an interactive Google Map with advanced search and filtering capabilities.
 
