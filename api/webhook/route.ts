@@ -19,20 +19,18 @@ export async function POST(request: NextRequest) {
     // Extract form data from the request
     const {
       name,
-      email,
       phone,
+      type_of_place,
       address,
-      city,
-      state,
-      zip_code,
+      retention_days,
       notes,
       status = 'pending'
     } = body
 
     // Validate required fields
-    if (!name || !email || !address) {
+    if (!name || !address) {
       return NextResponse.json(
-        { error: 'Missing required fields: name, email, address' },
+        { error: 'Missing required fields: name, address' },
         { status: 400 }
       )
     }
@@ -64,12 +62,10 @@ export async function POST(request: NextRequest) {
       .insert([
         {
           name,
-          email,
           phone,
+          type_of_place: type_of_place || '',
           address,
-          city,
-          state,
-          zip_code,
+          retention_days: retention_days || '',
           notes,
           status,
           latitude,
